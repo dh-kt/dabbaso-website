@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Updating Blog About Dabbaso</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', includedLanguages: 'en,om,ru,am,fr,it' },
+                'google_translate_element'
+            );
+            // Fix for dark mode persistence
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('dark-mode-toggle').textContent = '☀️';
+            }
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <div class="header-buttons">
+            <div id="google_translate_element"></div>
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/dabbaso1.png" alt="Dabbaso Logo">
+            </div>
+                        
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about">About Us</a></li>
+                    <li><a href="history.html" data-translate="history">History/Stories</a></li>
+                    <li><a href="infrastructure.html" data-translate="infrastructure">Current Infrastructure</a></li>
+                    <li><a href="blog.html" data-translate="blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-heading blog-heading">
+        <h1 data-translate="blog-title">Dabbaso Blog</h1>
+        <p data-translate="blog-description">Stay updated with the latest news and stories from Dabbaso.</p>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <h2 data-translate="family-tree">My Family Tree</h2>
+        <p data-translate="family-description">Hello to all who came across this first post, and I would like 
+            to introduce you to this post's purpose, which is my family tree. I am DhaBa and my Dad is Kabbada.
+            Then I will let you know again and lead you to my family tree that connects me to Godo, who became 
+            Dabbaso, and spread around the current town called Dabbaso.</p>
+        
+        <!-- Blog Posts -->
+        <div class="blog-posts">
+            <!-- Post 1 -->
+            <div class="post">
+                <img src="images/post1.jpg" alt="Post 1 Image">
+                <h3 data-translate="post1-title">New High School Opens in Dabbaso</h3>
+                <p class="meta" data-translate="post1-date">Posted on October 10, 2005 | Category: Education</p>
+                <p data-translate="post1-description">The new high school in Dabbaso is now open, providing quality education to over 500 students. This marks a significant milestone in the town's development.</p>
+                <a href="#" class="read-more" data-translate="read-more">Read More</a>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+                <img src="images/post2.jpg" alt="Post 2 Image">
+                <h3 data-translate="post2-title">Community Market Day</h3>
+                <p class="meta" data-translate="post2-date">Posted on January 24, 2025 | Category: Events</p>
+                <p data-translate="post2-description">Join us for the weekly community market day, where local vendors showcase their products and crafts. It's a great opportunity to support local businesses.</p>
+                <a href="#" class="read-more" data-translate="read-more">Read More</a>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <img src="images/post3.jpg" alt="Post 3 Image">
+                <h3 data-translate="post3-title">Celebrating Years of Progress</h3>
+                <p class="meta" data-translate="post3-date">Posted on February 24, 2025 | Category: History</p>
+                <p data-translate="post3-description">Dabbaso is celebrating its years of growth and transformation. The event featured speeches, cultural performances, and a look back at the town's journey.</p>
+                <a href="#" class="read-more" data-translate="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dabbaso. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com/Dabbaso" target="_blank">Facebook</a>
+            <a href="https://twitter.com/Dabbaso" target="_blank">Twitter</a>
+            <a href="https://instagram.com/Dabbaso" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

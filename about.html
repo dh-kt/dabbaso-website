@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Beautiful Dabbaso Town</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', includedLanguages: 'en,om,ru,am,fr,it' },
+                'google_translate_element'
+            );
+            // Fix for dark mode persistence
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('dark-mode-toggle').textContent = '☀️';
+            }
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-buttons">
+            <div id="google_translate_element"></div>
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/dabbaso4.png" alt="Dabbaso Logo">
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about">About Us</a></li>
+                    <li><a href="history.html" data-translate="history">History/Stories</a></li>
+                    <li><a href="infrastructure.html" data-translate="infrastructure">Current Infrastructure</a></li>
+                    <li><a href="blog.html" data-translate="blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Rest of the content remains the same -->
+    <section class="page-heading about-heading">
+        <h1 data-translate="about-title">About The Beautiful Town of Dabbaso</h1>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2 data-translate="about-heading">About Dabbaso Town</h2>
+        <p data-translate="about-description">Dabbaso, located in the Sayo-Nole district of the Oromia state in Ethiopia, has witnessed tremendous growth and transformation over the past 40 years. Once a tiny village with limited infrastructure, Dabbaso has blossomed into a bustling town.</p>
+        
+        <!-- Infrastructure Section -->
+        <h3 data-translate="infrastructure">Infrastructure</h3>
+        <p data-translate="infrastructure-description">Today, Dabbaso is equipped with various infrastructures, including:</p>
+        <ul>
+            <li data-translate="high-school">High School</li>
+            <li data-translate="police-station">Police Station</li>
+            <li data-translate="polyclinic">Polyclinic</li>
+            <li data-translate="private-clinics">Several Private Clinics</li>
+            <li data-translate="other-infra">Various other infrastructures</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h3 data-translate="contact">Contact Us</h3>
+        <form>
+            <label for="name" data-translate="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" data-translate="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message" data-translate="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" data-translate="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dabbaso. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com/Dabbaso">Facebook</a>
+            <a href="https://twitter.com/Dabbaso">Twitter</a>
+            <a href="https://instagram.com/Dabbaso">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

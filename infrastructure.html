@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Infrastructure</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', includedLanguages: 'en,om,ru,am,fr,it' },
+                'google_translate_element'
+            );
+            // Fix for dark mode persistence
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('dark-mode-toggle').textContent = '☀️';
+            }
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+   <!-- Header -->
+   <header>
+    <div class="header-buttons">
+        <div id="google_translate_element"></div>
+        <button id="dark-mode-toggle">🌙</button>
+    </div>
+
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/dabbaso1.png" alt="Dabbaso Logo">
+        </div>
+       
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li><a href="about.html" data-translate="about">About Us</a></li>
+                <li><a href="history.html" data-translate="history">History/Stories</a></li>
+                <li><a href="infrastructure.html" data-translate="infrastructure">Current Infrastructure</a></li>
+                <li><a href="blog.html" data-translate="blog">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="page-heading infrastructure-heading">
+        <h1 data-translate="infrastructure-title">Dabbaso Town and Its Current Infrastructures</h1>
+    </section>
+    
+    <!-- Infrastructure Content -->
+    <section class="infrastructure-content">
+        <h2 data-translate="infrastructure-heading">Current Infrastructure</h2>
+        <p data-translate="infrastructure-description">Dabbaso is equipped with modern facilities that serve the needs of its residents. Below is a list of key infrastructure in the town.</p>
+
+        <!-- Infrastructure List -->
+        <div class="infrastructure-list">
+            <!-- High School -->
+            <div class="infrastructure-item">
+                <img src="images/high-school.jpg" alt="High School">
+                <h3 data-translate="high-school">High School</h3>
+                <p data-translate="high-school-description">The Dabbaso High School provides quality education to over 500 students. It features modern classrooms, a library, and sports facilities.</p>
+            </div>
+
+            <!-- Police Station -->
+            <div class="infrastructure-item">
+                <img src="images/police-station.jpg" alt="Police Station">
+                <h3 data-translate="police-station">Police Station</h3>
+                <p data-translate="police-station-description">The Dabbaso Police Station ensures the safety and security of the town's residents. It is staffed by dedicated officers who serve the community.</p>
+            </div>
+
+            <!-- Polyclinic -->
+            <div class="infrastructure-item">
+                <img src="images/polyclinic.jpg" alt="Polyclinic">
+                <h3 data-translate="polyclinic">Polyclinic</h3>
+                <p data-translate="polyclinic-description">The Dabbaso Polyclinic offers healthcare services to the community, including general consultations, maternal care, and emergency services.</p>
+            </div>
+
+            <!-- Private Clinics -->
+            <div class="infrastructure-item">
+                <img src="images/private-clinic.jpg" alt="Private Clinic">
+                <h3 data-translate="private-clinics">Private Clinics</h3>
+                <p data-translate="private-clinics-description">Several private clinics in Dabbaso provide specialized healthcare services, including dental care, pediatrics, and diagnostics.</p>
+            </div>
+
+            <!-- Market -->
+            <div class="infrastructure-item">
+                <img src="images/market.jpg" alt="Market">
+                <h3 data-translate="market">Market</h3>
+                <p data-translate="market-description">The Dabbaso Market is a hub for trade and commerce, offering fresh produce, household goods, and handmade crafts.</p>
+            </div>
+
+            <!-- Community Center -->
+            <div class="infrastructure-item">
+                <img src="images/community-center.jpg" alt="Community Center">
+                <h3 data-translate="community-center">Community Center</h3>
+                <p data-translate="community-center-description">The Dabbaso Community Center hosts events, meetings, and cultural activities, fostering a sense of unity among residents.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dabbaso. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com/Dabbaso" target="_blank">Facebook</a>
+            <a href="https://twitter.com/Dabbaso" target="_blank">Twitter</a>
+            <a href="https://instagram.com/Dabbaso" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

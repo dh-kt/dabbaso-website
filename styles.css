@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .header-buttons {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    /* Blog and infrastructure grid */
+    .blog-posts, .infrastructure-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for small devices */
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .contact-us form {
+        padding: 10px;
+    }
+}
+
+/* Resize images */
+.post img, .infrastructure-item img {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background-color: #c4e7eb;
+    color: #000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 5px, rgb(247, 210, 47) snow;
+    height: 30px;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+/* Center all headings */
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(8, 8, 8);
+}
+h2, h3 {
+    text-align: left;
+    text-transform: initial;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(66, 6, 230);
+    font-weight: bold sans-serif;
+    margin: 20px 0;
+}
+/* Logo */
+.logo {
+    position: absolute;
+    left: 5px;
+    top: 70%;
+    transform: translateY(-60%);
+    z-index: 1;
+}
+
+.logo img {
+    width: 70px;
+    height: 50px;
+}
+
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+body.dark-mode nav ul li a {
+    color: #ffffff;
+}
+
+/* Header Buttons */
+.header-buttons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Google Translate Styling */
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-combo {
+    padding: 5px;
+    background: rgb(239, 239, 239);
+    border: none;
+    color: rgb(13, 11, 11);
+    border-radius: 5px;
+}
+
+body.dark-mode .goog-te-combo {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Contact Form */
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #3d3d3d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b6e8eb;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.social-media a {
+    color: #7dbbf5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+body.dark-mode .social-media a {
+    color: #7dbbf5;
+}
